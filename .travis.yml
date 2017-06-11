@@ -7,7 +7,7 @@ php:
 script: scripts/travis-build.sh
 
 deploy:
- provider: script
+  provider: script
   script: scripts/travis-deploy.sh
   on:
     branch: openshift-travis
