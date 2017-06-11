@@ -13,8 +13,8 @@ define('DB_COLLATE', '');
 
 define('WP_DEBUG', true);
 
-define('DB_FILE', 'wp-test.sqlite');  
-define('DB_DIR', '/var/www/');  
+define('DB_FILE', 'wp-test.sqlite');
+define('DB_DIR', '/opt/app-root/src');
 
 define('AUTH_KEY',         'jOH7CI2)3*@2hHJW@cPo66vuB4LMOrJHsymgEFITTPlN2F1Spr@i%oBGJ%yndRur');
 define('SECURE_AUTH_KEY',  'H@XBeV&(*Fl0DfNGpOnNw*Qd&V*LA7ZxfOad&tl3OYK@jBEDY#dbThax$*J4Vzj&');
