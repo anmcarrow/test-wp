@@ -1,0 +1,14 @@
+language: php
+php:
+- '5.5'
+- '5.4'
+deploy:
+  provider: openshift
+  user: mailbox@anmcarrow.me
+  password:
+    secure: KWcfTq2keACdAlK7shmL5IN1NZnsedR8Zf9qhB10Ar4Bb/cCtvaTWngKatR55Yn7L63/0TCx0zR3KT6FgvY9Rs7RtoSvYqf4VfirF8ql4B3nSeKQqd7AxYsPotHpWMfIoulu/TNauSn0f89Wkhtwbm2GbnG+mE1HEL+7xDbuBpAfcmLhKhsuPE4kSMSyluxKnU90ZcxEw8gjckNFI3IlldDADWePLi4+EEZ29TZmV3ZZc2Oi7AT3uNoTSKplq00WUae0tWV+moW0EIl4p5V+DJJ7/Wh6qaOZDRyAHa7vMEHJ342LdXTZsHC38qPXpGNJQHhfGMncrVph4BRvCz9vt2Tuj7Ec/8xdbwW5WZN91wEZIB8TNRPgLLD5DAx7MGZQ/Ov0TM5xAJLUTGjjPHs6cF6MC8V79/Cg+Mugh8Wan/f0JZYjB7i7MlDVPlUpd7qwX9PIw9FlZCDOX0Mz28OLcJuC7J2+MIe6355wkCTUdYCvjEBo62eReohvAErgoMdmmEKoGpqiwMXKeZvkFYcXf4chboFR5Ezp0VTZLwyf848k7BpXuWtfQ7NyeO0UWikNThxQo6f3wPit19KTCU0SDU+aF3lZ0KE09qm7BqC7JoOHrl3VJQFEAp2Sr39r1khKkB34N5HDPbDR66TwXfO7sOi6v5/bq0D0s0UPHratleo=
+  app: test-wp
+  domain: api.starter-us-west-2.openshift.com
+  on:
+    repo: anmcarrow/test-wp
+    branch: openshift-travis
